@@ -43,6 +43,6 @@ class User < ApplicationRecord
   end
   
   def likes?(micropost)
-    self.favorites.include?(micropost)
+    self.likes.include?(micropost)
   end
 end
